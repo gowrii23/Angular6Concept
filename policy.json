@@ -1,0 +1,80 @@
+{
+  "life": [
+    {
+      "id": 101,
+      "policyNumber": "49",
+      "policyHolerName": "Ramesh",
+      "status": "inforce",
+      "maturityDate": "12-10-2020",
+      "policyAmount": 150000,
+      "premium": 400,
+      "paymentMode": "mon"
+    },
+    {
+      "id": 102,
+      "policyNumber": 584828,
+      "policyHolerName": "Rajesh",
+      "status": "inforce",
+      "maturityDate": "08-10-2020",
+      "policyAmount": 300000,
+      "premium": 1400,
+      "paymentMode": "QTR"
+    },
+    {
+      "id": 103,
+      "policyNumber": 6364378,
+      "policyHolerName": "Rakesh",
+      "status": "inforce",
+      "maturityDate": "08-01-2020",
+      "policyAmount": 500000,
+      "premium": 1800,
+      "paymentMode": "YRL"
+    },
+    {
+      "id": "104",
+      "policyNumber": "996584254",
+      "policyHolerName": "Gowri",
+      "status": "single",
+      "maturityDate": "23/02/2020",
+      "policyAmount": "5000",
+      "premium": "50135",
+      "paymentMode": "YRL"
+    },
+    {
+      "id": "105",
+      "policyNumber": "5986532",
+      "policyHolerName": "Padmanaban",
+      "status": "sinfl",
+      "maturityDate": "12-12-2021",
+      "policyAmount": "6000",
+      "premium": "4522",
+      "paymentMode": "YRL"
+    },
+    {
+      "id": "106",
+      "policyNumber": "98565",
+      "policyHolerName": "Dele",
+      "status": "kjk",
+      "maturityDate": "78-78-985",
+      "policyAmount": "5633",
+      "premium": "5633",
+      "paymentMode": "yrl"
+    }
+  ],
+  "health": [],
+  "vechicle": [],
+  "popular": [
+    {
+      "policyName": "Jeevan Anand",
+      "description": "Money back and Survival Benefit"
+    },
+    {
+      "policyName": "Jeevan Aasha",
+      "description": "Survival Benefit and Bonus"
+    },
+    {
+      "policyName": "Jeevan Akashy",
+      "description": "Survival Benefit and Hospitalization Coverage"
+    }
+  ]
+}

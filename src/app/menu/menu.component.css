@@ -1,0 +1,10 @@
+ul > li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  margin: 10px 10px;
+  font-size: 1.4em;
+  color: #0000ff;
+}

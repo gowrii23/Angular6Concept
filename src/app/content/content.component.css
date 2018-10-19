@@ -1,0 +1,14 @@
+.panel {
+  width: 25%;
+  height: 100px;
+  border: 2px solid #eeafb4;
+  background-color: #daf0da;
+}
+
+.content {
+  display: flex;
+}
+
+.box {
+  width: 300px;
+}

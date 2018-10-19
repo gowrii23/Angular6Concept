@@ -1,0 +1,13 @@
+<nav>
+  <ul>
+    <li *ngFor="let eachLink of linkText">
+
+      <a [routerLink]=[eachLink.linkRef] appHighLight [color]="'orange'">{{eachLink.linkText}}</a>
+    </li>
+
+    <li *ngIf="
+        showLogin"><a [routerLink]="['login']">Login</a></li>
+    <li *ngIf="showLogout"> <a [routerLink]="['logout']">Logout</a></li>
+
+  </ul>
+</nav>

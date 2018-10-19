@@ -1,0 +1,34 @@
+<div class="card-deck">
+
+  <label>Search By Policy
+    <input type='search' [(ngModel)]='srchString'>
+  </label>
+  <div class="card" *ngFor="let popularPolicy of popularList | filter:'policyName':srchString let idx=index  " style="width: 300px">
+
+    <div class="card-header">{{popularPolicy.policyName}}</div>
+    <div class="card-body">{{popularPolicy.description}}
+      <p>{{idx}} {{info}}</p>
+    </div>
+    <div class="card-footer"><button class="btn btn-danger" (click)="showInfo(idx)">Show Details</button>
+    </div>
+
+
+  </div>
+
+
+  <div>
+    <app-testimony></app-testimony>
+  </div>
+
+  <div class='content'>
+    <div>
+      <div *ngFor="let eachComment of comments" style="width: 300px">
+        <div [ngStyle]="{'background-color':bgColor}">
+          <p> <b>{{eachComment.name}}</b></p>
+        </div>
+        <div>
+          <p> {{eachComment.comment}}</p>
+        </div>
+      </div>
+    </div>
+  </div>

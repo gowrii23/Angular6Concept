@@ -1,0 +1,51 @@
+<div class="col-md-2">
+  <form #f='ngForm' (ngSubmit)='submit(f.value)' ngNativeValidate *ngIf='show'>
+    <label for="">ID</label>
+    <input type="text" name='id' [(ngModel)]=policyData.id>
+    <label for="">PolicyNumber</label>
+    <input type="text" name='policyNumber' [(ngModel)]='policyData.policyNumber'>
+    <label for="">PolicyHolerName</label>
+    <input type="text" name='policyHolerName' [(ngModel)]='policyData.policyHolerName'>
+    <label for="">Status</label>
+    <input type="text" name='status' [(ngModel)]='policyData.status'>
+    <label for="">MaturityDate</label>
+    <input type="date" name='maturityDate' [(ngModel)]='policyData.maturityDate'>
+    <label for="">PolicyAmount</label>
+    <input type="text" name='policyAmount' [(ngModel)]='policyData.policyAmount'>
+    <label for="">Premium</label>
+    <input type="text" name='premium' [(ngModel)]='policyData.premium'>
+    <label for="">PaymentMode</label>
+    <input type="text" name='paymentMode' [(ngModel)]='policyData.paymentMode'>
+    <input type="submit" [value]='btnText'>
+  </form>
+  {{status}}
+</div>
+
+<table class="table table-striped">
+  <tr>
+    <th>ID</th>
+    <th>PolicyNumber</th>
+    <th>PolicyHolerName</th>
+    <th>Status</th>
+    <th>MaturityDate</th>
+    <th>PolicyAmount</th>
+    <th>Premium</th>
+    <th>PaymentMode</th>
+    <th><button (click)='change()' class='fa fa-2x fa-plus'>Add Policy</button></th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let eachPolicy of policyList  | paginate:{itemsPerPage:3,currentPage:p}">
+    <td>{{eachPolicy.id}}</td>
+    <td>{{eachPolicy.policyNumber}}</td>
+    <td>{{eachPolicy.policyHolerName}}</td>
+    <td>{{eachPolicy.status}}</td>
+    <td>{{eachPolicy.maturityDate}}</td>
+    <td>{{eachPolicy.policyAmount}}</td>
+    <td>{{eachPolicy.premium}}</td>
+    <td>{{eachPolicy.paymentMode}}</td>
+    <td><button type='button' value='edit' (click)='edit(eachPolicy)' class='fa fa-1x fa-edit'></button></td>
+    <td><button value='Delete' (click)='delete(eachPolicy)' class='fa fa-1x fa-trash'></button></td>
+  </tr>
+</table>
+
+<pagination-controls (pageChange)="p=$event"></pagination-controls>
